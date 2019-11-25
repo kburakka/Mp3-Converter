@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowVideo" customModule="Mp3Convert" customModuleProvider="target">
+            <connections>
+                <outlet property="close" destination="Xxt-Fu-1bM" id="cRb-3e-XAH"/>
+                <outlet property="contentView" destination="nSo-MM-zBE" id="XUv-kN-QZn"/>
+                <outlet property="download" destination="IaY-A4-prX" id="beo-tS-6iS"/>
+                <outlet property="webView" destination="uh1-41-sxt" id="f0g-jC-B0K"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="nSo-MM-zBE">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IaY-A4-prX">
+                    <rect key="frame" x="92.5" y="441.5" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.097084905629999996" green="0.10261892810000001" blue="0.10279187820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="17o-EH-jVk"/>
+                        <constraint firstAttribute="width" constant="90" id="vRC-dS-scc"/>
+                    </constraints>
+                    <state key="normal" title="Download">
+                        <color key="titleColor" red="0.8784313725490196" green="0.88627450980392153" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxt-Fu-1bM">
+                    <rect key="frame" x="192.5" y="441.5" width="90" height="30"/>
+                    <color key="backgroundColor" red="0.097084905629999996" green="0.10261892810000001" blue="0.10279187820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="onl-aY-znI"/>
+                        <constraint firstAttribute="height" constant="30" id="vEZ-LE-WeQ"/>
+                    </constraints>
+                    <state key="normal" title="Close">
+                        <color key="titleColor" red="0.8784313725490196" green="0.88627450980392153" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uh1-41-sxt">
+                    <rect key="frame" x="10" y="233.5" width="355" height="200"/>
+                    <color key="backgroundColor" red="0.4441624365482234" green="0.4441624365482234" blue="0.4441624365482234" alpha="0.654296875" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="j3h-zM-Ffx"/>
+                    </constraints>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </wkWebView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.69250321061643838" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IaY-A4-prX" firstAttribute="centerX" secondItem="nSo-MM-zBE" secondAttribute="centerX" constant="-50" id="6Ui-co-Uar"/>
+                <constraint firstItem="uh1-41-sxt" firstAttribute="centerY" secondItem="nSo-MM-zBE" secondAttribute="centerY" id="8iZ-1A-196"/>
+                <constraint firstItem="6Q6-lu-6dl" firstAttribute="trailing" secondItem="uh1-41-sxt" secondAttribute="trailing" constant="10" id="Dq3-Bc-JBh"/>
+                <constraint firstItem="IaY-A4-prX" firstAttribute="top" secondItem="uh1-41-sxt" secondAttribute="bottom" constant="8" id="GLj-9g-HAd"/>
+                <constraint firstItem="uh1-41-sxt" firstAttribute="leading" secondItem="6Q6-lu-6dl" secondAttribute="leading" constant="10" id="RTW-24-A7v"/>
+                <constraint firstItem="Xxt-Fu-1bM" firstAttribute="centerX" secondItem="nSo-MM-zBE" secondAttribute="centerX" constant="50" id="hk2-Vj-hUs"/>
+                <constraint firstItem="Xxt-Fu-1bM" firstAttribute="top" secondItem="uh1-41-sxt" secondAttribute="bottom" constant="8" id="uWf-33-JPc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6Q6-lu-6dl"/>
+            <point key="canvasLocation" x="-12" y="275.71214392803603"/>
+        </view>
+    </objects>
+</document>

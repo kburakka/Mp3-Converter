@@ -3,10 +3,16 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D9074CA83FC7130F88E1EE3 /* libPods-Youtube-Mp3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B0DA58131060036DA1F108 /* libPods-Youtube-Mp3.a */; };
+		67090B282388122700CEF3C7 /* ShowVideo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67090B272388122700CEF3C7 /* ShowVideo.xib */; };
+		67090B2A2388123600CEF3C7 /* ShowVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67090B292388123600CEF3C7 /* ShowVideo.swift */; };
+		67090B2C238BC23100CEF3C7 /* DownloadingVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67090B2B238BC23100CEF3C7 /* DownloadingVideosViewController.swift */; };
+		67090B31238C053500CEF3C7 /* VideoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67090B2F238C053500CEF3C7 /* VideoViewCell.swift */; };
+		67090B32238C053500CEF3C7 /* VideoViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67090B30238C053500CEF3C7 /* VideoViewCell.xib */; };
 		67BA7A942385261A00B4251A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BA7A932385261A00B4251A /* AppDelegate.swift */; };
 		67BA7A962385261A00B4251A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BA7A952385261A00B4251A /* SceneDelegate.swift */; };
 		67BA7A982385261A00B4251A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BA7A972385261A00B4251A /* ViewController.swift */; };
@@ -16,6 +22,11 @@
 		67BA7AA32385261A00B4251A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67BA7AA12385261A00B4251A /* LaunchScreen.storyboard */; };
 		67BA7AAE2385261B00B4251A /* Youtube_Mp3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BA7AAD2385261B00B4251A /* Youtube_Mp3Tests.swift */; };
 		67BA7AB92385261B00B4251A /* Youtube_Mp3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BA7AB82385261B00B4251A /* Youtube_Mp3UITests.swift */; };
+		67BA7AC72385262E00B4251A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 67BA7AC62385262E00B4251A /* Podfile */; };
+		67BA7ACD23855EB000B4251A /* DownloadedVideosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BA7ACC23855EB000B4251A /* DownloadedVideosController.swift */; };
+		67BA7ACF238669AA00B4251A /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BA7ACE238669AA00B4251A /* GlobalFunctions.swift */; };
+		67BA7AD52386B1F800B4251A /* RxPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BA7AD42386B1F800B4251A /* RxPlayer.swift */; };
+		67BA7AD72387B08200B4251A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67BA7AD62387B08200B4251A /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		67BA7A902385261A00B4251A /* Youtube-Mp3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube-Mp3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		67090B272388122700CEF3C7 /* ShowVideo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowVideo.xib; sourceTree = "<group>"; };
+		67090B292388123600CEF3C7 /* ShowVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowVideo.swift; sourceTree = "<group>"; };
+		67090B2B238BC23100CEF3C7 /* DownloadingVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadingVideosViewController.swift; sourceTree = "<group>"; };
+		67090B2F238C053500CEF3C7 /* VideoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewCell.swift; sourceTree = "<group>"; };
+		67090B30238C053500CEF3C7 /* VideoViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VideoViewCell.xib; sourceTree = "<group>"; };
+		67BA7A902385261A00B4251A /* Mp3Convert.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mp3Convert.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67BA7A932385261A00B4251A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		67BA7A952385261A00B4251A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		67BA7A972385261A00B4251A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +67,15 @@
 		67BA7AB42385261B00B4251A /* Youtube-Mp3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Youtube-Mp3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67BA7AB82385261B00B4251A /* Youtube_Mp3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Youtube_Mp3UITests.swift; sourceTree = "<group>"; };
 		67BA7ABA2385261B00B4251A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67BA7AC62385262E00B4251A /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		67BA7AC9238559F800B4251A /* Youtube-Mp3-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Youtube-Mp3-Bridging-Header.h"; sourceTree = "<group>"; };
+		67BA7ACC23855EB000B4251A /* DownloadedVideosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadedVideosController.swift; sourceTree = "<group>"; };
+		67BA7ACE238669AA00B4251A /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		67BA7AD42386B1F800B4251A /* RxPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxPlayer.swift; sourceTree = "<group>"; };
+		67BA7AD62387B08200B4251A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		87B0DA58131060036DA1F108 /* libPods-Youtube-Mp3.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Youtube-Mp3.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C062AD87F3F4E72B3D715234 /* Pods-Youtube-Mp3.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youtube-Mp3.release.xcconfig"; path = "Target Support Files/Pods-Youtube-Mp3/Pods-Youtube-Mp3.release.xcconfig"; sourceTree = "<group>"; };
+		D750C70C90FCAA9386FB1E21 /* Pods-Youtube-Mp3.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Youtube-Mp3.debug.xcconfig"; path = "Target Support Files/Pods-Youtube-Mp3/Pods-Youtube-Mp3.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D9074CA83FC7130F88E1EE3 /* libPods-Youtube-Mp3.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,20 +104,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67090B262388120F00CEF3C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67090B272388122700CEF3C7 /* ShowVideo.xib */,
+				67090B292388123600CEF3C7 /* ShowVideo.swift */,
+				67090B2F238C053500CEF3C7 /* VideoViewCell.swift */,
+				67090B30238C053500CEF3C7 /* VideoViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		67BA7A872385261900B4251A = {
 			isa = PBXGroup;
 			children = (
+				67BA7AC62385262E00B4251A /* Podfile */,
 				67BA7A922385261A00B4251A /* Youtube-Mp3 */,
 				67BA7AAC2385261B00B4251A /* Youtube-Mp3Tests */,
 				67BA7AB72385261B00B4251A /* Youtube-Mp3UITests */,
 				67BA7A912385261A00B4251A /* Products */,
+				A6352F4D13736ED5F66FE260 /* Pods */,
+				8590AA02098FFD5D82091112 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		67BA7A912385261A00B4251A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				67BA7A902385261A00B4251A /* Youtube-Mp3.app */,
+				67BA7A902385261A00B4251A /* Mp3Convert.app */,
 				67BA7AA92385261B00B4251A /* Youtube-Mp3Tests.xctest */,
 				67BA7AB42385261B00B4251A /* Youtube-Mp3UITests.xctest */,
 			);
@@ -101,6 +141,7 @@
 		67BA7A922385261A00B4251A /* Youtube-Mp3 */ = {
 			isa = PBXGroup;
 			children = (
+				67090B262388120F00CEF3C7 /* Views */,
 				67BA7A932385261A00B4251A /* AppDelegate.swift */,
 				67BA7A952385261A00B4251A /* SceneDelegate.swift */,
 				67BA7A972385261A00B4251A /* ViewController.swift */,
@@ -109,6 +150,12 @@
 				67BA7AA12385261A00B4251A /* LaunchScreen.storyboard */,
 				67BA7AA42385261A00B4251A /* Info.plist */,
 				67BA7A9C2385261A00B4251A /* Youtube_Mp3.xcdatamodeld */,
+				67BA7AC9238559F800B4251A /* Youtube-Mp3-Bridging-Header.h */,
+				67BA7ACC23855EB000B4251A /* DownloadedVideosController.swift */,
+				67BA7ACE238669AA00B4251A /* GlobalFunctions.swift */,
+				67BA7AD42386B1F800B4251A /* RxPlayer.swift */,
+				67BA7AD62387B08200B4251A /* TabBarController.swift */,
+				67090B2B238BC23100CEF3C7 /* DownloadingVideosViewController.swift */,
 			);
 			path = "Youtube-Mp3";
 			sourceTree = "<group>";
@@ -131,6 +178,23 @@
 			path = "Youtube-Mp3UITests";
 			sourceTree = "<group>";
 		};
+		8590AA02098FFD5D82091112 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87B0DA58131060036DA1F108 /* libPods-Youtube-Mp3.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A6352F4D13736ED5F66FE260 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D750C70C90FCAA9386FB1E21 /* Pods-Youtube-Mp3.debug.xcconfig */,
+				C062AD87F3F4E72B3D715234 /* Pods-Youtube-Mp3.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67BA7ABD2385261B00B4251A /* Build configuration list for PBXNativeTarget "Youtube-Mp3" */;
 			buildPhases = (
+				CAF8BE27772408A5605A1088 /* [CP] Check Pods Manifest.lock */,
 				67BA7A8C2385261A00B4251A /* Sources */,
 				67BA7A8D2385261A00B4251A /* Frameworks */,
 				67BA7A8E2385261A00B4251A /* Resources */,
+				85935038127A403DB79C5CAF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,7 +214,7 @@
 			);
 			name = "Youtube-Mp3";
 			productName = "Youtube-Mp3";
-			productReference = 67BA7A902385261A00B4251A /* Youtube-Mp3.app */;
+			productReference = 67BA7A902385261A00B4251A /* Mp3Convert.app */;
 			productType = "com.apple.product-type.application";
 		};
 		67BA7AA82385261A00B4251A /* Youtube-Mp3Tests */ = {
@@ -199,6 +265,7 @@
 				TargetAttributes = {
 					67BA7A8F2385261A00B4251A = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					67BA7AA82385261A00B4251A = {
 						CreatedOnToolsVersion = 11.0;
@@ -237,6 +304,9 @@
 			files = (
 				67BA7AA32385261A00B4251A /* LaunchScreen.storyboard in Resources */,
 				67BA7AA02385261A00B4251A /* Assets.xcassets in Resources */,
+				67BA7AC72385262E00B4251A /* Podfile in Resources */,
+				67090B282388122700CEF3C7 /* ShowVideo.xib in Resources */,
+				67090B32238C053500CEF3C7 /* VideoViewCell.xib in Resources */,
 				67BA7A9B2385261A00B4251A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,15 +327,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		85935038127A403DB79C5CAF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Youtube-Mp3/Pods-Youtube-Mp3-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Youtube-Mp3/Pods-Youtube-Mp3-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Youtube-Mp3/Pods-Youtube-Mp3-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAF8BE27772408A5605A1088 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Youtube-Mp3-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67BA7A8C2385261A00B4251A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				67BA7A9E2385261A00B4251A /* Youtube_Mp3.xcdatamodeld in Sources */,
+				67BA7AD72387B08200B4251A /* TabBarController.swift in Sources */,
+				67090B31238C053500CEF3C7 /* VideoViewCell.swift in Sources */,
+				67BA7ACD23855EB000B4251A /* DownloadedVideosController.swift in Sources */,
+				67BA7ACF238669AA00B4251A /* GlobalFunctions.swift in Sources */,
 				67BA7A982385261A00B4251A /* ViewController.swift in Sources */,
 				67BA7A942385261A00B4251A /* AppDelegate.swift in Sources */,
+				67090B2A2388123600CEF3C7 /* ShowVideo.swift in Sources */,
 				67BA7A962385261A00B4251A /* SceneDelegate.swift in Sources */,
+				67BA7AD52386B1F800B4251A /* RxPlayer.swift in Sources */,
+				67090B2C238BC23100CEF3C7 /* DownloadingVideosViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +489,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -424,7 +544,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Pods";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -436,37 +557,90 @@
 		};
 		67BA7ABE2385261B00B4251A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D750C70C90FCAA9386FB1E21 /* Pods-Youtube-Mp3.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7UJ425XN7W;
+				DEVELOPMENT_TEAM = 75265928R5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/Google/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAPIClientForREST\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/Headers/Public/MarqueeLabel\"",
+					"\"${PODS_ROOT}/Headers/Public/PandoraPlayer\"",
+					"\"${PODS_ROOT}/Headers/Public/RxCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+				);
 				INFOPLIST_FILE = "Youtube-Mp3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "burak-kaya.Youtube-Mp3";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Mp3Convert;
+				SWIFT_OBJC_BRIDGING_HEADER = "Youtube-Mp3/Youtube-Mp3-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		67BA7ABF2385261B00B4251A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C062AD87F3F4E72B3D715234 /* Pods-Youtube-Mp3.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7UJ425XN7W;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks\"",
+					"\"${PODS_ROOT}/Google/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleSignIn/Frameworks\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/GTMSessionFetcher\"",
+					"\"${PODS_ROOT}/Headers/Public/Google\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleAPIClientForREST\"",
+					"\"${PODS_ROOT}/Headers/Public/GoogleToolboxForMac\"",
+					"\"${PODS_ROOT}/Headers/Public/MarqueeLabel\"",
+					"\"${PODS_ROOT}/Headers/Public/PandoraPlayer\"",
+					"\"${PODS_ROOT}/Headers/Public/RxCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"$(inherited)",
+					"${PODS_ROOT}/Google/Headers",
+				);
 				INFOPLIST_FILE = "Youtube-Mp3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "burak-kaya.Youtube-Mp3";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.youtubeMp3;
+				PRODUCT_NAME = Mp3Convert;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Youtube-Mp3/Youtube-Mp3-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
