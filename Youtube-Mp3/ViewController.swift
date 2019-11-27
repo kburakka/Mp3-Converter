@@ -198,7 +198,10 @@ class ViewController: UIViewController,UISearchBarDelegate{
     }
     
     func searchVideo(text : String){
-        let text = text.replacingOccurrences(of: " ", with: "+")
+        let capital = text.capitalized
+        var text = capital.replacingOccurrences(of: " ", with: "+")
+        text = text.addingPercentEncoding(withAllowedCharacters: NSCharacterSet.urlQueryAllowed)!
+
         let url = "https://www.googleapis.com/youtube/v3/search?part=snippet&order=viewCount&q=\(text)&maxResults=50&type=video&videoDefinition=high&id=AKiiekaEHhI&key=\(key)"
         videoCellArr.removeAll()
         Alamofire.request(url, method: .get).responseJSON{ response in
