@@ -23,6 +23,7 @@ enum RxPlayerState {
     case Playing
     case Paused
     case Failed
+    case Finished
     case Unknown
 }
 
@@ -38,6 +39,7 @@ class RxPlayer {
         subscibeToState()
         subscribeToCurrentItem()
         subscribeToPlayerStatus()
+        subscribeToPlayer()
     }
     
     func addProgressObserver(action:@escaping ((Double) -> Void)) -> Any {
@@ -68,6 +70,8 @@ class RxPlayer {
                 self?.player.pause()
             case .Failed:
                 print("Failed")
+            case .Finished:
+                print("Finished")
             default:
                 break
             }
@@ -101,6 +105,14 @@ class RxPlayer {
         }).disposed(by: bag)
     }
     
+    @objc func playerDidFinishPlaying(sender: Notification) {
+        self.state.accept(.Finished)
+    }
+    
+    private func subscribeToPlayer() {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.playerDidFinishPlaying(sender:)), name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player.currentItem)
+    }
+    
     /// Receive an RxPlayerItem in order to play it
     ///
     /// - Parameter item: An RxPlayerItem
@@ -129,9 +141,9 @@ class RxPlayer {
     ///   - currentItemURL: URL?
     ///   - item: RxPlayerItem
     
-    func pause(){
-        self.player.pause()
-    }
+//    func pause(){
+//        self.player.pause()
+//    }
     
     private func compareCurrentItemURL(currentItemURL: URL?, item: RxPlayerItem?) {
 //        if currentItemURL != item.url {

@@ -44,6 +44,18 @@ class DownloadedVideosController: UIViewController,UITableViewDelegate,UITableVi
                 self?.playPause.setBackgroundImage(UIImage(named: "playBtn"), for: .normal)
             case .Failed:
                 print("Failed")
+            case .Finished:
+                self?.player.state.accept(.Paused)
+                if let currentSongIndex = self?.currentSongIndex, let downloadedVides = self?.downloadedVides{
+                    if currentSongIndex < downloadedVides.count-1{
+                        self?.currentSongIndex = currentSongIndex+1
+                        guard let path = self?.videosInDirectory(title: downloadedVides[(self?.currentSongIndex)!].id) else{
+                            return
+                        }
+                        self?.player.playItem(RxPlayerItem(title: downloadedVides[(self?.currentSongIndex!)!].title, artist: "aa", url:path))
+                        self?.player.state.accept(.Playing)
+                    }
+                }
             default:
                 break
             }
@@ -150,6 +162,7 @@ class DownloadedVideosController: UIViewController,UITableViewDelegate,UITableVi
             }
             currentSongIndex = indexPath.row
         player.playItem(RxPlayerItem(title: downloadedVides[indexPath.row].title, artist: "aa", url: path))
+        self.player.state.accept(.Playing)
     }
     override func viewDidLoad() {
         subscibeToState()
@@ -178,6 +191,7 @@ class DownloadedVideosController: UIViewController,UITableViewDelegate,UITableVi
                 return
             }
             player.playItem(RxPlayerItem(title: downloadedVides[index].title, artist: "aa", url: path))
+            self.player.state.accept(.Playing)
         }
     }
     
@@ -233,6 +247,7 @@ class DownloadedVideosController: UIViewController,UITableViewDelegate,UITableVi
                 return
             }
             player.playItem(RxPlayerItem(title: downloadedVides[index].title, artist: "aa", url: path))
+            self.player.state.accept(.Playing)
         }
     }
 }
