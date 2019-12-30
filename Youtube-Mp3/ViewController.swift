@@ -29,8 +29,7 @@ class VideoCell {
 }
 
 class ViewController: UIViewController,UISearchBarDelegate{
-//    let key = "AIzaSyB8r2q2PWYS70cIYU2VdzlMsWwre0l_RvY"
-    let key = "AIzaSyCEk9NowuSv6luXn1GL9esx13eL3lKE34M"
+    let key = "key"
     let showVideoView = ShowVideo()
     var videoCellArr = [VideoCell]()
     @IBOutlet weak var searchBar: UISearchBar!
